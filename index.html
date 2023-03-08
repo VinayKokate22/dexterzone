@@ -40,9 +40,27 @@
                 <i class="fa-solid fa-palette"></i>
               </li>
             </ul>
+            <div class="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </nav>
         </div>
       </section>
+      <div>
+        <ul class="mobile_nav-list isactive">
+          <div class="navigationtheme-menu">
+            <h1><span class="colorword">H</span>emant.</h1>
+          </div>
+          <a class="closenavlist" href="#landing-page"><li>Home</li></a>
+          <a class="closenavlist" href="#about"><li>About</li></a>
+          <a class="closenavlist" href="#servicesection"><li>Services</li></a>
+          <a class="closenavlist" href="#worksection"><li>Portfolio</li></a>
+
+          <a class="closenavlist" href="#contactmesection"
+            ><li>Contact Me</li>
+          </a>
+        </ul>
+      </div>
       <video autoplay loop muted plays-inline src="lady.mp4"></video>
       <section class="hero">
         <p>3D Graphic Designer</p>
@@ -87,33 +105,46 @@
           "PROCREATE",
         ];
 
-        var tagCloud = TagCloud(".Sphere", Texts, {
-          // Sphere radius in px
-          radius: 150,
+        if (window.innerWidth < 1100) {
+          console.log("hello bitch");
+          var tagCloud = TagCloud(".Sphere", Texts, {
+            // Sphere radius in px
+            radius: 150,
 
-          // animation speed
-          // slow, normal, fast
-          maxSpeed: "fast",
-          initSpeed: "fast",
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: "fast",
+            initSpeed: "fast",
 
-          // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
-          direction: 135,
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+            direction: 135,
 
-          // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
-          keep: true,
-        });
-        window.addEventListener("resize", function () {
-          if (window.innerWidth < 1100) {
-            console("jekdfsdakfk");
-            tagCloud.updateOptions({ radius: 100 });
-          } else {
-            tagCloud.updateOptions({ radius: 300 });
-          }
-        });
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true,
+          });
+        } else {
+          var tagCloud = TagCloud(".Sphere", Texts, {
+            // Sphere radius in px
+            radius: 300,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: "fast",
+            initSpeed: "fast",
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true,
+          });
+        }
 
         // Giving color to each text in sphere
         var color = "#FF5733 ";
         document.querySelector(".Sphere").style.color = color;
+
+        // Change sphere radius when window size is less than 1100
       </script>
       <div class="about-info">
         <div>
@@ -378,7 +409,7 @@
         <h2>Contact Me</h2>
         <div class="direct-links">
           <i class="fa-solid fa-envelope"></i>
-          <a href="hemantkokate@gamil.com">hemantkokate@gamil.com</a>
+          <a href="mailto:hemantkokate@gamil.com">hemantkokate@gamil.com</a>
         </div>
 
         <div class="sociallinks-flex">

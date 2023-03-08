@@ -10,6 +10,9 @@ const colorOption = document.querySelector(".color-option");
 
 const theme = document.querySelector(".theme");
 const faMoon = document.querySelector(".fa-moon");
+const mobileNavlist = document.querySelector(".mobile_nav-list");
+const closeNavlist = document.querySelectorAll(".closenavlist");
+const hamBurgermenu = document.querySelector(".hamburger");
 
 // faMoon.addEventListener("click",function () {
 //     theme.classList.add("light")
@@ -26,6 +29,15 @@ const faMoon = document.querySelector(".fa-moon");
 //     document.documentElement.style.setProperty('--divbackground',"#212121")
 
 // })
+hamBurgermenu.addEventListener("click", function () {
+  mobileNavlist.classList.toggle("isactive");
+});
+
+for (let i = 0; i < closeNavlist.length; i++) {
+  closeNavlist[i].addEventListener("click", function () {
+    mobileNavlist.classList.toggle("isactive");
+  });
+}
 
 faMoon.addEventListener("click", function () {
   theme.classList.toggle("light");
@@ -119,7 +131,3 @@ tabLinksEdu.addEventListener("click", function () {
 //       aboutSkills.classList.remove("active-tab")
 //     }
 //   })
-
-const Scrollbar = window.scrollbars;
-
-Scrollbar.init(document.querySelector("#smoothscroll"));
