@@ -13,6 +13,7 @@ const faMoon = document.querySelector(".fa-moon");
 const mobileNavlist = document.querySelector(".mobile_nav-list");
 const closeNavlist = document.querySelectorAll(".closenavlist");
 const hamBurgermenu = document.querySelector(".hamburger");
+const hamburgerMobile = document.querySelector(".hamburgermobile");
 
 // faMoon.addEventListener("click",function () {
 //     theme.classList.add("light")
@@ -30,12 +31,12 @@ const hamBurgermenu = document.querySelector(".hamburger");
 
 // })
 hamBurgermenu.addEventListener("click", function () {
-  mobileNavlist.classList.toggle("isactive");
+  hamburgerMobile.classList.toggle("isactive");
 });
 
 for (let i = 0; i < closeNavlist.length; i++) {
   closeNavlist[i].addEventListener("click", function () {
-    mobileNavlist.classList.toggle("isactive");
+    hamburgerMobile.classList.toggle("isactive");
   });
 }
 
