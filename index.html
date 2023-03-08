@@ -45,7 +45,7 @@
       </section>
       <video autoplay loop muted plays-inline src="lady.mp4"></video>
       <section class="hero">
-        <p>3D Designer</p>
+        <p>3D Graphic Designer</p>
 
         <h2>
           Hi, i'm
@@ -66,21 +66,76 @@
     </div>
     <main class="about aboutflex" id="about">
       <!-- <div class="aboutflex"> -->
-      <div class="about-image" data-aos="fade-right">
+      <!-- <div class="about-image" data-aos="fade-right">
         <img src="3d-business-man-playing-dress-up-with-pet-dog.png" alt="" />
-      </div>
+      </div> -->
+      <span class="Sphere"></span>
+
+      <!-- Including the TagCloud.js script CDN in the document    -->
+      <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+      <script>
+        const Texts = [
+          "SKETCH",
+          "ANIMATION",
+          "BLENDER",
+          "ADOBE PHOTOSHOP",
+          "ADOBE PREMIER PRO",
+          "AFTER EFFECT",
+          "AUTOCAD",
+          "ADOBE LIGHTROOM",
+          "ADOBE InDESIGN",
+          "PROCREATE",
+        ];
+
+        var tagCloud = TagCloud(".Sphere", Texts, {
+          // Sphere radius in px
+          radius: 150,
+
+          // animation speed
+          // slow, normal, fast
+          maxSpeed: "fast",
+          initSpeed: "fast",
+
+          // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)]
+          direction: 135,
+
+          // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+          keep: true,
+        });
+        window.addEventListener("resize", function () {
+          if (window.innerWidth < 1100) {
+            console("jekdfsdakfk");
+            tagCloud.updateOptions({ radius: 100 });
+          } else {
+            tagCloud.updateOptions({ radius: 300 });
+          }
+        });
+
+        // Giving color to each text in sphere
+        var color = "#FF5733 ";
+        document.querySelector(".Sphere").style.color = color;
+      </script>
       <div class="about-info">
         <div>
-          <h2 data-aos="fade-left">About Me</h2>
+          <h2 data-aos="fade-left">Me, Myself and I</h2>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat
-            doloremque consequuntur minima? Reprehenderit repudiandae vel
-            distinctio eveniet perspiciatis mollitia perferendis itaque animi
-            assumenda vero, sit quasi saepe doloribus cupiditate. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Ea iusto natus aliquam
-            error possimus assumenda? Blanditiis odio, repellat sed eius
-            excepturi officia ea, omnis sapiente illo quisquam numquam fugit
-            accusantium?
+            Well, hello there! My name is Hemant, and I'm a seasoned Lead
+            Graphic Designer with a passion for creating beautiful, eye-catching
+            designs that truly speak to people. <br /><br />
+
+            I've honed my skills in 3D Visualization, Sketching, Adobe
+            Photoshop, Adobe Premiere Pro, and Fine Art, all in service of
+            creating designs that are not only visually stunning, but also tell
+            a story and capture the essence of what makes a brand or experience
+            truly special. I take great pride in my ability to bring ideas to
+            life through design, and nothing gives me greater satisfaction than
+            seeing a client's vision come to fruition. Whether it's through a
+            dynamic 3D model, a detailed sketch, or a beautiful piece of fine
+            art, I strive to create designs that truly connect with people on a
+            deep level. <br /><br />
+            So if you're looking for a designer who is not only skilled, but
+            also deeply passionate about their craft, look no further. I'm here
+            and ready to help bring your vision to life!
           </p>
         </div>
         <div data-aos="fade-up">
@@ -93,61 +148,54 @@
         <div class="tab-content aboutskills active-tab" data-aos="fade-up">
           <div class="marginmedium">
             <li>
-              <span class="colorword">2021- Current skills</span>
+              <span class="colorword">Highly Skilled </span>
             </li>
-            <li class="marginsmall">3D designer at zostel</li>
+            <li class="marginsmall">Blender</li>
           </div>
           <div class="marginmedium">
+            <li>
+              <span class="colorword">Skills I Know</span>
+            </li>
+            <li class="marginsmall">
+              <ol>
+                <li>Adobe Photoshop</li>
+
+                <li>Adobe premiere Pro</li>
+                <li>Sketching</li>
+              </ol>
+            </li>
+          </div>
+          <!-- <div class="marginmedium">
             <li>
               <span class="colorword">2021- Current</span>
             </li>
             <li class="marginsmall">3D designer at zostel</li>
-          </div>
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">2021- Current</span>
-            </li>
-            <li class="marginsmall">3D designer at zostel</li>
-          </div>
+          </div> -->
         </div>
         <div class="tab-content aboutexp" data-aos="fade-up">
           <div class="marginmedium">
             <li>
-              <span class="colorword">2021- Current exp</span>
+              <span class="colorword">Zo World</span>
             </li>
-            <li class="marginsmall">3D designer at zostel</li>
+            <li class="marginsmall">
+              Lead 3D Graphic Designer (Sep 2021 - Present )
+            </li>
           </div>
           <div class="marginmedium">
             <li>
-              <span class="colorword">2021- Current</span>
+              <span class="colorword">Zostel</span>
             </li>
-            <li class="marginsmall">3D designer at zostel</li>
-          </div>
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">2021- Current</span>
-            </li>
-            <li class="marginsmall">3D designer at zostel</li>
+            <li class="marginsmall">3D designer (Jul 2021 - Sep 2021)</li>
           </div>
         </div>
         <div class="tab-content aboutedu" data-aos="fade-up">
           <div class="marginmedium">
             <li>
-              <span class="colorword">2021- Current</span>
+              <span class="colorword">Avantika University</span>
             </li>
-            <li class="marginsmall">3D designer at zostel</li>
-          </div>
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">2021- Current</span>
+            <li class="marginsmall">
+              Bachelor of Design, Graphic Design (2017-2021)
             </li>
-            <li class="marginsmall">3D designer at zostel</li>
-          </div>
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">2021- Current</span>
-            </li>
-            <li class="marginsmall">3D designer at zostel</li>
           </div>
         </div>
       </div>
@@ -202,46 +250,125 @@
       <h2 data-aos="fade-right">My Work</h2>
       <div class="work-flex" data-aos="fade-up">
         <div class="work-list">
-          <img src="3d-business-man-playing-dress-up-with-pet-dog.png" alt="" />
+          <img src="0d2c0188679801.Y3JvcCw1NDc1LDQyODMsMzg3Niww.jpg" alt="" />
           <div class="layer">
-            <h3>Social Media App</h3>
+            <h3>Abstract visual design</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              voluptate molestias itaque nostrum neque voluptatibus illum velit
-              quae culpa. Sapiente reprehenderit eaque ducimus aliquam autem
-              molestiae ratione dolores eius ipsa?
+              There are 16 visuals inside the book and each visual is explained
+              through process which are visually represented.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/88679801/Abstract-visual-design"
+              target="_blank"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img src="52a337106930333.Y3JvcCwxMDMxLDgwNiw2NjgsNDg.jpg" alt="" />
+          <div class="layer">
+            <h3>Product video 3D animation</h3>
+            <p>
+              I made this product animnation for easyNav. The technology used in
+              this project was --
+            </p>
+            <a
+              href="https://www.behance.net/gallery/106930333/Product-video-3D-animation-easyNav"
+              target="_blank"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img src="aeb41c87992085.Y3JvcCwzMTcwLDI0ODAsMCww.jpg" alt="" />
+          <div class="layer">
+            <h3>The Hollow Earth</h3>
+            <p>
+              I started exploring about Hollow earth. Finally I reached to the
+              point to take this as the topic of interest for publication
+              design.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/87992085/Publication-Design-The-Hollow-Earth"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img
+            src="6adef6106926867.Y3JvcCwxNTM2LDEyMDEsMCwzMDc.jpg"
+            alt="about-image"
+          />
+          <div class="layer">
+            <h3>Alive</h3>
+            <p>It was a team project tell me what to write about it</p>
+            <a href="https://www.behance.net/gallery/106926867/3D-art-ALIVE"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img
+            src="33efcc105417561.Y3JvcCwxNzEzLDEzNDAsMjI0LDY4Ng.jpg"
+            alt="about-image"
+          />
+          <div class="layer">
+            <h3>Sherlock Homes Room</h3>
+            <p>
+              I recreated the room of Sherlock Homes, showing the feeling of the
+              vintage style the technology used were -
+            </p>
+            <a
+              href="https://www.behance.net/gallery/105417561/Sherlock-Holmes-Room-%28Isometric-3D-Style%29"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img src="80d3ba90145433.5f77f565eb13a.jpg" alt="about-image" />
+          <div class="layer">
+            <h3>Character Design</h3>
+            <p>
+              This is character design entry for Supercell Make Campaign. The
+              procedure of making this includes initial sketching, 3D modelling,
+              UV unwrapping, texture painting, map baking, basic rigging and
+              volumetrics. Software: Photoshop and Blender 3D
+            </p>
+            <a
+              href="https://www.behance.net/gallery/90145433/Character-design-AZaKa-Bo"
+              ><i class="fa-solid fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="work-list">
+          <img
+            src="8957a8123311871.Y3JvcCw3MjMsNTY1LDMwMiw1MQ.jpg"
+            alt="about-image"
+          />
+          <div class="layer">
+            <h3>Interior Design</h3>
+            <p>
+              Following are the the 3D renderings of Zostel Homes Manali for the
+              purpose of interior beautification.
             </p>
             <a href=""><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
         <div class="work-list">
-          <img src="3d-business-man-playing-dress-up-with-pet-dog.png" alt="" />
+          <img src="c27810106928281.Y3JvcCwzMDY4LDI0MDAsNjgsMA.jpg" alt="" />
           <div class="layer">
-            <h3>Social Media App</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              voluptate molestias itaque nostrum neque voluptatibus illum velit
-              quae culpa. Sapiente reprehenderit eaque ducimus aliquam autem
-              molestiae ratione dolores eius ipsa?
-            </p>
-            <a href=""><i class="fa-solid fa-link"></i></a>
-          </div>
-        </div>
-        <div class="work-list">
-          <img src="3d-business-man-playing-dress-up-with-pet-dog.png" alt="" />
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              voluptate molestias itaque nostrum neque voluptatibus illum velit
-              quae culpa. Sapiente reprehenderit eaque ducimus aliquam autem
-              molestiae ratione dolores eius ipsa?
-            </p>
+            <h3>Code Cryptex: Prop</h3>
+            <p>Code Cryptex: Prop from The Da Vinci Code using Blender</p>
             <a href=""><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
       </div>
-      <a href="#" class="seemorelink" data-aos="fade-up">See More</a>
+      <a
+        href="https://www.behance.net/hemantkokate"
+        target="_blank"
+        class="seemorelink"
+        >See More</a
+      >
     </section>
 
     <!-- contact me -->
@@ -251,20 +378,29 @@
         <h2>Contact Me</h2>
         <div class="direct-links">
           <i class="fa-solid fa-envelope"></i>
-          <a href="">hemantkokate@gamil.com</a>
+          <a href="hemantkokate@gamil.com">hemantkokate@gamil.com</a>
         </div>
-        <div class="direct-links">
-          <i class="fa-solid fa-phone"></i>
-          <a href="">7777777777</a>
-        </div>
+
         <div class="sociallinks-flex">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.behance.net/hemantkokate" target="_blank"
+            ><i class="fa-brands fa-behance"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hemant-kokate-873979167/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+
+          <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
         <button>Download CV</button>
       </div>
       <div class="contact-form" data-aos="fade-left">
-        <form onsubmit="sendemail() ; reset(); return false;">
+        <form
+          action="https://formsubmit.co/prathamvahuja@gmail.com"
+          method="POST"
+        >
           <input
             type="text"
             placeholder="Your Name"
@@ -287,7 +423,7 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -303,6 +439,5 @@
         duration: 800,
       });
     </script>
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
