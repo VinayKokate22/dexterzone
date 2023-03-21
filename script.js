@@ -32,6 +32,7 @@ const hamburgerMobile = document.querySelector(".hamburgermobile");
 //     document.documentElement.style.setProperty('--divbackground',"#212121")
 
 // })
+
 hamBurgermenu.addEventListener("click", function () {
   hamburgerMobile.classList.toggle("isactive");
 });
@@ -108,18 +109,31 @@ tabLinks.addEventListener("click", function () {
   aboutExp.classList.remove("active-tab");
   aboutEdu.classList.remove("active-tab");
   aboutAch.classList.remove("active-tab");
+  tabLinks.classList.add("currentlink");
+  tabLinksAch.classList.remove("currentlink");
+  tabLinksEdu.classList.remove("currentlink");
+  tabLinksExp.classList.remove("currentlink");
 });
 tabLinksExp.addEventListener("click", function () {
   aboutExp.classList.add("active-tab");
   aboutEdu.classList.remove("active-tab");
   aboutSkills.classList.remove("active-tab");
   aboutAch.classList.remove("active-tab");
+  tabLinksExp.classList.add("currentlink");
+  tabLinksAch.classList.remove("currentlink");
+  tabLinksEdu.classList.remove("currentlink");
+
+  tabLinks.classList.remove("currentlink");
 });
 tabLinksEdu.addEventListener("click", function () {
   aboutEdu.classList.add("active-tab");
   aboutExp.classList.remove("active-tab");
   aboutSkills.classList.remove("active-tab");
   aboutAch.classList.remove("active-tab");
+  tabLinksEdu.classList.add("currentlink");
+  tabLinksAch.classList.remove("currentlink");
+  tabLinksExp.classList.remove("currentlink");
+  tabLinks.classList.remove("currentlink");
 });
 tabLinksAch.addEventListener("click", function () {
   aboutAch.classList.add("active-tab");
@@ -127,6 +141,10 @@ tabLinksAch.addEventListener("click", function () {
   aboutEdu.classList.remove("active-tab");
   aboutExp.classList.remove("active-tab");
   aboutSkills.classList.remove("active-tab");
+  tabLinksAch.classList.add("currentlink");
+  tabLinksEdu.classList.remove("currentlink");
+  tabLinksExp.classList.remove("currentlink");
+  tabLinks.classList.remove("currentlink");
 });
 
 // tabLinks.addEventListener("click", function(event) {
