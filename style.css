@@ -81,6 +81,7 @@ body {
 
 .scroll-to-top {
   position: fixed;
+  z-index: 9999;
   bottom: 0;
   right: 0;
   padding: 0.5rem;
@@ -293,12 +294,13 @@ body {
 }
 .about-skills li {
   list-style: none;
-  margin-right: 3rem;
-  color: gray;
+  margin-right: 1rem;
   font-weight: bold;
+  color: gray;
   cursor: pointer;
   position: relative;
 }
+
 .about-skills li::after {
   content: "";
   width: 0;
@@ -309,6 +311,17 @@ body {
   bottom: -0.4rem;
   transition: 0.5s;
 }
+.tab-links-skills:hover {
+  color: white;
+}
+.applyflex {
+  display: flex;
+  gap: 2rem;
+}
+.applyflex .marginsmall li {
+  margin-top: 0.3rem;
+}
+
 .about-skills li:hover::after {
   width: 100%;
 }

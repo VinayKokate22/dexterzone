@@ -1,9 +1,11 @@
 const aboutSkills = document.querySelector(".aboutskills");
 const aboutExp = document.querySelector(".aboutexp");
 const aboutEdu = document.querySelector(".aboutedu");
+const aboutAch = document.querySelector(".aboutach");
 const tabLinks = document.querySelector(".tab-links-skills");
 const tabLinksExp = document.querySelector(".tab-links-exp");
 const tabLinksEdu = document.querySelector(".tab-links-edu");
+const tabLinksAch = document.querySelector(".tab-links-ach");
 
 const colorPalet = document.querySelector(".colorpalet");
 const colorOption = document.querySelector(".color-option");
@@ -105,14 +107,24 @@ tabLinks.addEventListener("click", function () {
   aboutSkills.classList.add("active-tab");
   aboutExp.classList.remove("active-tab");
   aboutEdu.classList.remove("active-tab");
+  aboutAch.classList.remove("active-tab");
 });
 tabLinksExp.addEventListener("click", function () {
   aboutExp.classList.add("active-tab");
   aboutEdu.classList.remove("active-tab");
   aboutSkills.classList.remove("active-tab");
+  aboutAch.classList.remove("active-tab");
 });
 tabLinksEdu.addEventListener("click", function () {
   aboutEdu.classList.add("active-tab");
+  aboutExp.classList.remove("active-tab");
+  aboutSkills.classList.remove("active-tab");
+  aboutAch.classList.remove("active-tab");
+});
+tabLinksAch.addEventListener("click", function () {
+  aboutAch.classList.add("active-tab");
+
+  aboutEdu.classList.remove("active-tab");
   aboutExp.classList.remove("active-tab");
   aboutSkills.classList.remove("active-tab");
 });

@@ -41,7 +41,7 @@
               <li><a href="#landing-page">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#servicesection">Services</a></li>
-              <li><a href="#worksection">Portfolio</a></li>
+              <li><a href="#worksection">My Work</a></li>
               <li><a href="#contactmesection">Contact Me</a></li>
               <li class="colorpalet">
                 <i class="fa-solid fa-palette"></i>
@@ -61,7 +61,7 @@
           <a class="closenavlist" href="#landing-page"><li>Home</li></a>
           <a class="closenavlist" href="#about"><li>About</li></a>
           <a class="closenavlist" href="#servicesection"><li>Services</li></a>
-          <a class="closenavlist" href="#worksection"><li>Portfolio</li></a>
+          <a class="closenavlist" href="#worksection"><li>My Work</li></a>
 
           <a class="closenavlist" href="#contactmesection"
             ><li>Contact Me</li>
@@ -89,7 +89,7 @@
         </a>
       </section>
     </div>
-    <main class="about aboutflex" id="about">
+    <div class="about aboutflex" id="about">
       <!-- <div class="aboutflex"> -->
       <!-- <div class="about-image" data-aos="fade-right">
         <img src="3d-business-man-playing-dress-up-with-pet-dog.png" alt="" />
@@ -100,16 +100,18 @@
       <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
       <script>
         const Texts = [
-          "SKETCH",
-          "ANIMATION",
+          "Adobe Photoshop",
+          "Adobe InDesign",
           "BLENDER",
-          "ADOBE PHOTOSHOP",
-          "ADOBE PREMIER PRO",
-          "AFTER EFFECT",
-          "AUTOCAD",
-          "ADOBE LIGHTROOM",
-          "ADOBE InDESIGN",
-          "PROCREATE",
+          "Typography",
+          "Davinci Resolve",
+          "Sketch UP",
+          "3D Modeling",
+          "Branding",
+          "Illustration",
+          "Adobe XD",
+          "Adobe lightroom",
+          "Adobe InDesign",
         ];
 
         if (window.innerWidth < 1100) {
@@ -181,27 +183,41 @@
             <li class="tab-links-skills">Skills</li>
             <li class="tab-links-exp">Experience</li>
             <li class="tab-links-edu">Education</li>
+            <li class="tab-links-ach">Achievement</li>
           </ul>
         </div>
-        <div class="tab-content aboutskills active-tab" data-aos="fade-up">
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">Highly Skilled </span>
-            </li>
-            <li class="marginsmall">Blender</li>
-          </div>
-          <div class="marginmedium">
-            <li>
-              <span class="colorword">Skills I Know</span>
-            </li>
-            <li class="marginsmall">
-              <ol>
-                <li>Adobe Photoshop</li>
-
-                <li>Adobe premiere Pro</li>
-                <li>Sketching</li>
-              </ol>
-            </li>
+        <div
+          class="tab-content aboutskills active-tab applyflex"
+          data-aos="fade-up"
+        >
+          <div class="applyflex">
+            <div class="marginmedium">
+              <li>
+                <span class="colorword">Technical Skills</span>
+              </li>
+              <li class="marginsmall">
+                <ol>
+                  <li>Video Editing</li>
+                  <li>Packaging Design</li>
+                  <li>illustration</li>
+                </ol>
+              </li>
+            </div>
+            <div class="marginmedium">
+              <li>
+                <span class="colorword">Software Skills</span>
+              </li>
+              <li class="marginsmall">
+                <ol>
+                  <li>Adobe Photoshop</li>
+                  <li>Blender</li>
+                  <li>Adobe InDesign</li>
+                  <li>Davinci Resolve</li>
+                  <li>Adobe XD</li>
+                  <li>Adobe lightroom</li>
+                </ol>
+              </li>
+            </div>
           </div>
           <!-- <div class="marginmedium">
             <li>
@@ -225,6 +241,14 @@
             </li>
             <li class="marginsmall">3D designer (Jul 2021 - Sep 2021)</li>
           </div>
+          <div class="marginmedium">
+            <li>
+              <span class="colorword">The Minimalist</span>
+            </li>
+            <li class="marginsmall">
+              Branding and Communication (May 2020 - Aug 2020)
+            </li>
+          </div>
         </div>
         <div class="tab-content aboutedu" data-aos="fade-up">
           <div class="marginmedium">
@@ -236,9 +260,26 @@
             </li>
           </div>
         </div>
+        <div class="tab-content aboutach" data-aos="fade-up">
+          <div class="marginmedium">
+            <li>
+              <span class="colorword">Achievements</span>
+            </li>
+            <li class="marginsmall">
+              Winner of regional and district level at World Skill
+              competions(2017-2018)
+              <br />
+              <br />
+              Competitor from Madhya Pradesh at World Skills National(2018)
+              <br />
+              <br />
+              Ranked 1st in first and second year of University
+            </li>
+          </div>
+        </div>
       </div>
       <!-- </div> -->
-    </main>
+    </div>
 
     <!-- services -->
 
@@ -489,7 +530,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 200,
+        offset: 100,
         duration: 800,
       });
     </script>
