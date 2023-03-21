@@ -574,11 +574,11 @@ body {
 }
 @media screen and (max-width: 1100px) {
   video {
-    width: 15rem;
-    height: 10rem;
+    width: 20rem;
+    height: 15rem;
 
     top: 28rem;
-    right: 4rem;
+    right: 3rem;
     object-fit: cover;
   }
   .fa-moon {
