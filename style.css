@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 /* i am adding this line of code at last */
 .currentlink {
@@ -118,7 +119,7 @@ body {
   display: none;
 }
 .colorpalet {
-  position: fixed;
+  position: absolute;
   right: 3rem;
   top: 2rem;
   font-size: 2rem;
