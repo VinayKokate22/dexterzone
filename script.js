@@ -49,18 +49,21 @@ faMoon.addEventListener("click", function () {
   if (theme.classList.contains("light")) {
     document.documentElement.style.setProperty("--colortheme", "#5793fb");
     document.documentElement.style.setProperty("--divbackground", "#afdaff");
+    mobileNavlist.classList.add("light");
   } else {
     document.documentElement.style.setProperty("--colortheme", "#5067cd");
     document.documentElement.style.setProperty("--divbackground", "#212121");
+    mobileNavlist.classList.remove("light");
   }
-}) /
-  //
-  //
-  //
-  //
-  colorPalet.addEventListener("click", function () {
-    colorOption.classList.toggle("hidden");
-  });
+});
+
+//
+//
+//
+//
+colorPalet.addEventListener("click", function () {
+  colorOption.classList.toggle("hidden");
+});
 
 //
 //
